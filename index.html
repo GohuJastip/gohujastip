@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOHU | Jasa Titip Paket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            width: 100%;
+            background-color: #3498db;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a,
+        .navbar button {
+            display: inline-block;
+            padding: 12px 18px;
+            color: white;
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .navbar a:hover,
+        .navbar button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .navbar .active {
+            background-color: #1abc9c;
+        }
+
+        .navbar .login {
+            float: right;
+            background-color: #e74c3c;
+        }
+
+        /* Logo and Centered Title */
+        .center-text {
+            text-align: center;
+            margin-top: 60px;
+            padding: 10px;
+        }
+
+        .logo-img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .center-text p {
+            font-size: 22px;
+            color: #34495e;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        /* Main Content Area */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            padding: 0 15px;
+        }
+
+        .content-box {
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 30px;
+        }
+
+        .content-box h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .content-box p {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+
+        /* Harga Information */
+        .price-info {
+            font-size: 22px;
+            color: #e74c3c;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9ebc6;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #3498db;
+            color: white;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content-box {
+                width: 100%;
+                padding: 30px;
+            }
+
+            .logo-img {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Logo and Centered Title -->
+    <div class="center-text">
+        <img src="GOHU1.png" alt="Logo GOHU" class="logo-img">
+        <p>Jasa Titip Paket Murah Pelayanan Terbaik</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Beranda</a>
+        <a href="Daftaralamat.jsp"><i class="fa fa-fw fa-search"></i> Daftar Alamat</a>
+        <button onclick="location.href='transaksi.jsp'">
+            <i class="fa fa-fw fa-ticket"></i> Cek Paket
+        </button>
+        <button class="login" onclick="location.href='login.jsp'">
+            <i class="fa fa-fw fa-user"></i> Login
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content-box">
+            <h2>Selamat Datang di GOHU!</h2>
+            <p>Kami menyediakan layanan jasa titip paket dengan harga terbaik dan pelayanan yang cepat dan aman.</p>
+            
+            <!-- Harga Info -->
+            <div class="price-info">
+                Jakarta ke Maluku Utara mulai dari <strong>Rp. 17.000/Kg</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 GOHU By. Pace.dniel.</p>
+    </footer>
+
+</body>
+
+</html>
